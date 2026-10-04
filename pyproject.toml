@@ -1,0 +1,26 @@
+[project]
+name = "pandapowerdemo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Aksel", email = "ahsorbye@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "folium>=0.12",
+    "mapclassify>=2.10.0",
+    "matplotlib>=3.11.1",
+    "numba>=0.67.0",
+    "pandapower[all]>=3.5.4",
+    "pulp>=3.3.2",
+    "pytest>=9.1.1",
+    "tqdm>=4.70.0",
+]
+
+[project.scripts]
+pandapowerdemo = "pandapowerdemo:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
